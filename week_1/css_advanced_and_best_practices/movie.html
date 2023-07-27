@@ -1,59 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Title - Official Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
+<body class=" leading-[1.6]" style=" font-family: Arial, sans-serif;">
+  <header class="bg-[#333] p-8">
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#cast">Cast</a></li>
-        <li><a href="#trailer">Trailer</a></li>
-        <li><a href="#reviews">Reviews</a></li>
+      <ul class="flex">
+        <li class="mr-4"><a class="text-white no-underline hover:underline" href="#about">About</a></li>
+        <li class="mr-4"><a class="text-white no-underline hover:underline" href="#cast">Cast</a></li>
+        <li class="mr-4"><a class="text-white no-underline hover:underline" href="#trailer">Trailer</a></li>
+        <li class="mr-4"><a class="text-white no-underline hover:underline" href="#reviews">Reviews</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class=" p-16">
     <section id="hero">
-      <h1>Movie Title</h1>
-      <p>Tagline or brief description of the movie.</p>
-      <a href="#trailer" class="cta-button">Watch Trailer</a>
+      <h1 class="text-5xl text-[#333] mb-2 font-bold">Movie Title</h1>
+      <p class="text-[#555] mb-4">Tagline or brief description of the movie.</p>
+      <a href="#trailer" class="inline-block bg-[#e74c3c] text-white no-underline px-8 py-4 rounded-[5px] hover:bg-[#c0392b]">Watch Trailer</a>
     </section>
 
     <section id="about">
-      <h2>About the Movie</h2>
-      <p>Provide an overview of the movie's plot and key details.</p>
-      <p>Release Date: [Date]</p>
-      <p>Director: [Director's Name]</p>
+      <h2 class="text-[2rem] text-[#333] mb-2 font-bold mt-10">About the Movie</h2>
+      <p class=" text-[#555] mb-4">Provide an overview of the movie's plot and key details.</p>
+      <p class=" text-[#555] mb-4">Release Date: [Date]</p>
+      <p class=" text-[#555] mb-4">Director: [Director's Name]</p>
     </section>
 
     <section id="cast">
-      <h2>Cast</h2>
-      <ul>
-        <li>Actor 1</li>
-        <li>Actor 2</li>
-        <li>Actor 3</li>
+      <h2 class="text-[2rem] text-[#333] mb-2 font-bold">Cast</h2>
+      <ul class="ml-8">
+        <li class="list-disc">Actor 1</li>
+        <li class="list-disc">Actor 2</li>
+        <li class="list-disc">Actor 3</li>
         <!-- Add more cast members here -->
       </ul>
     </section>
 
     <section id="trailer">
-      <h2>Trailer</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/[YouTube Video ID]" frameborder="0" allowfullscreen></iframe>
+      <h2 class="text-[2rem] text-[#333] mb-2 font-bold">Trailer</h2>
+      <iframe class= "w-full h-[315px]"width="560" height="315" src="https://www.youtube.com/embed/[YouTube Video ID]" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <section id="reviews">
-      <h2>Reviews</h2>
-      <div class="review">
+      <h2 class="text-[2rem] text-[#333] mb-2 font-bold">Reviews</h2>
+      <div class=" border mb-4 p-4 rounded-[5px] border-solid border-[#ccc]">
         <h3>Reviewer 1</h3>
         <p>Review content here...</p>
       </div>
-      <div class="review">
+      <div class=" border mb-4 p-4 rounded-[5px] border-solid border-[#ccc]">
         <h3>Reviewer 2</h3>
         <p>Review content here...</p>
       </div>
