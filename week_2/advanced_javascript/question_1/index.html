@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <div class="btn-primary" onclick="onsave()">Save</div>
+    </main>
+
+    <script>
+        function onsave(){
+            const button = document.querySelector(".btn-primary");
+            button.className = "py-4 px-6 bg-black text-white font-semibold rounded-full select-none cursor-pointer text-2xl transition -all duration-500" ;
+            button.textContent = "Saved"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer components {
+    main{
+      @apply flex justify-center items-center h-screen w-auto 
+    }
+    .btn-primary {
+      @apply py-4 px-6 bg-red-600 text-white font-semibold rounded-full select-none cursor-pointer text-2xl;
+    }
+  }
