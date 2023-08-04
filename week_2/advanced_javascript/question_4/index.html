@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Example</title>
+  <!-- Include Tailwind CSS -->
+  <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="w-full max-w-md px-2 py-16 sm:px-0">
+            <div class="flex space-x-1  rounded-xl bg-blue-900/20 p-1">
+            <button class="tab-button bg-white text-blue-700">
+                Recent
+            </button>
+                
+              <button class="tab-button">
+                Popular
+              </button>
+              <button class="tab-button">
+                Trending
+              </button>
+            </div>
+            
+            <div class="mt-2">
+              <div class="tab-content rounded-xl bg-white p-3 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2">
+                <ul>
+                  <li class="relative rounded-md p-3 hover:bg-gray-100">
+                    <h3 class="text-sm font-medium leading-5">Does drinking coffee make you smarter?</h3>
+                    <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
+                      <li>5h ago</li>
+                      <li>&middot;</li>
+                      <li>5 comments</li>
+                      <li>&middot;</li>
+                      <li>2 shares</li>
+                    </ul>
+                    <a href="#" class="absolute inset-0 rounded-md ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"></a>
+                  </li>
+                  <!-- Add more list items here for each post -->
+                  <li class="relative rounded-md p-3 hover:bg-gray-100">
+                    <h3 class="text-sm font-medium leading-5">So you've bought coffee... now what??</h3>
+                    <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
+                      <li>2h ago</li>
+                      <li>&middot;</li>
+                      <li>3 comments</li>
+                      <li>&middot;</li>
+                      <li>2 shares</li>
+                    </ul>
+                    <a href="#" class="absolute inset-0 rounded-md ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"></a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <script>
+
+    </script>
+
+</body>
+</html>
