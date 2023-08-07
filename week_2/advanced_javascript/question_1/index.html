@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="main.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+          main{
+             @apply flex justify-center items-center h-screen w-auto 
+            }
+        .btn-primary {
+            @apply py-4 px-6 bg-red-600 text-white font-semibold rounded-full select-none cursor-pointer text-2xl;
+        }
+        }
+      </style>
 </head>
 <body>
     <main>
